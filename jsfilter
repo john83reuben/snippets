@@ -1,3 +1,9 @@
-function countTrue(arr) {
-	 
+function countTrue(arr){
+  let filtered = arr.filter(value => value === true);
+  return filtered.length;
 }
+
+result = countTrue([true, false, false, true, false]);
+
+
+console.log(result);
