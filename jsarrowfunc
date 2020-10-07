@@ -1,0 +1,21 @@
+//Normal function
+
+function inchesToFeet(inches) {
+
+	let calc = (inches >= 12) ? inches/12 : 0
+
+	return calc;
+  
+}
+let result = inchesToFeet(11);
+console.log(result);
+
+--------------------------
+
+//Arrow function
+
+let inchesToFeet = (inches) => (inches >= 12) ? inches/12 : 0
+  
+
+let result = inchesToFeet(324);
+console.log(result);
