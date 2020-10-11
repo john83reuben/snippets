@@ -1,0 +1,22 @@
+// Old way
+
+function addTo(x){
+
+  function innerFunc(y){
+
+    return x + y;
+  }
+
+  return innerFunc;
+}
+
+
+var addToTen = addTo(10);
+addToTen(3);
+
+-------------------------------------------------
+// New way
+
+const addTo = x => y => x + y
+var addToTen = addTo(10)
+addToTen(3)
